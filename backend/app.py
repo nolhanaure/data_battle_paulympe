@@ -47,7 +47,7 @@ class OllamaLLM(LLM):
         return "ollama"
 
     def _call(self, prompt: str, stop: list = None) -> str:
-        response = ollama.generate(model='mistral', prompt=prompt, options={"server": "http://host.docker.internal:11434"})
+        response = ollama.generate(model='mistral', prompt=prompt)
 
         try:
             return response.get("response", "")
