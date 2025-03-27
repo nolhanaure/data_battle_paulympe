@@ -25,12 +25,25 @@ Ce projet propose un assistant pédagogique pour les étudiants en droit des bre
 #### Étape 2 : Préparation de l'environnement 
 Sous linux : 
   ```sh
+    chmod 744 setup.sh
     ./setup.sh
   ```
 
 Sous Windows : 
   ```sh
     .\setup.bat
+  ```
+
+#### Étape 2 : Préparation de l'environnement 
+Front : 
+  ```sh
+    cd frontend
+    npm run dev
+  ```
+
+Dans un autre terminal, backend : 
+  ```sh
+    python3.11 -m uvicorn app:app --reload
   ```
 ### 3. Ouverture dans le navigateur
 Utilisez l'URL suivant dans votre navigateur:  
