@@ -12,7 +12,7 @@ Ce projet propose un assistant pédagogique pour les étudiants en droit des bre
 
 ### 1. Prérequis 
 - Ollama installé sur votre machine [https://ollama.com/download]
-- Python3.11
+- Python3.11 minimum
 
 ### 2. Lancement
 
@@ -25,6 +25,7 @@ Ce projet propose un assistant pédagogique pour les étudiants en droit des bre
 #### Étape 2 : Préparation de l'environnement 
 Sous linux : 
   ```sh
+    chmod 744 setup.sh
     ./setup.sh
   ```
 
@@ -32,10 +33,25 @@ Sous Windows :
   ```sh
     .\setup.bat
   ```
-### 3. Ouverture dans le navigateur
-Utilisez l'URL suivant dans votre navigateur:  
-     [http://localhost:5173]
 
+#### Étape 2 : Préparation de l'environnement 
+Front : 
+  ```sh
+    cd frontend
+    npm install
+    npm run dev
+  ```
+
+Dans un autre terminal, backend : 
+  ```sh
+    cd backend
+    python3.11 -m uvicorn app:app --reload
+  ```
+#### Étape 3 : Ouverture dans le navigateur
+Utilisez l'URL suivant dans votre navigateur:  
+     http://localhost:5173
+
+Ensuite, vous pouvez choisir entre question à thème, question aléatoire ou alors mettre votre propre question. Répondez-y et l'IA l'analysera et fournira une analyse détaillée. Si jamais vous n'avez pas la réponse, il suffit de cliquer sur "Je n'ai pas la réponse" pour que l'IA génère un modèle de réponse.
 ## 🗂️ Arborescence du projet
 
 Voici une description de l'arborescence du projet, en expliquant le rôle de chaque répertoire et fichier important :
@@ -50,6 +66,7 @@ Voici une description de l'arborescence du projet, en expliquant le rôle de cha
 - `Official_Legal_Publications_TXT/` : Textes légaux officiels bruts ou nettoyés.
   - `EPC/` : Convention EPC, Règlement d'application, Protocoles, etc. nettoyés.
 - `data_base/` : Versions brutes ou anciennes des fichiers.
+- - `logs/` : Logs reqêtes endpoint codecarbon
 - `emissions.csv` : Mesure de la consommation énergétique (outil CodeCarbon).
 
 ---
@@ -91,8 +108,7 @@ Le système a été pensé pour **minimiser son impact écologique** :
 - Aucun appel cloud/API externe
 - Modèles LLM exécutés localement
 - Embedding fait une seule fois en batch, index persisté
-- Évaluation de la consommation via `codecarbon`
-
+- À chaque appel d'un endpoint du backend, nous utilisons la bibliothèque CodeCarbon pour estimer en temps réel les émissions de CO₂ liées à l'exécution. Le tracker s’active au début de chaque traitement (ex. : génération de question ou analyse de réponse) et s’arrête automatiquement après. Cela permet de mesurer de manière précise la consommation énergétique de chaque requête. En plus de l'affichage dans la console, toutes les interactions sont enregistrées dans un fichier JSONL (interactions_log.jsonl) situé dans le dossier backend/logs
 ---
 
 ## 🧠 Design de la décision
