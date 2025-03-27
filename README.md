@@ -9,7 +9,8 @@ Ce projet propose un assistant pédagogique pour les étudiants en droit des bre
 - GADZINA Guillaume
 - BERGES Julien
 - AURÉ Nolhan
-
+- 
+⚠️ Sur CPU uniquement c'est très long !
 ### 1. Prérequis 
 - Ollama installé sur votre machine [https://ollama.com/download]
 - Python3.11 minimum
