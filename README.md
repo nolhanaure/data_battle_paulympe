@@ -51,7 +51,7 @@ Dans un autre terminal, backend :
 Utilisez l'URL suivant dans votre navigateur:  
      http://localhost:5173
 
-Ensuite vouspouvez choisir entre question à thème, question aléatoire ou alors mettre votre propre question. Répondez-y et l'ia l'analysera et fournira une analyse détaillée.Si jamais vous n'avez pas la réponse il suffit de cliquer sur "Je n'ai pas la réponse" pour que l'ia généres un modèle de réponse.
+Ensuite, vous pouvez choisir entre question à thème, question aléatoire ou alors mettre votre propre question. Répondez-y et l'IA l'analysera et fournira une analyse détaillée. Si jamais vous n'avez pas la réponse, il suffit de cliquer sur "Je n'ai pas la réponse" pour que l'IA génère un modèle de réponse.
 ## 🗂️ Arborescence du projet
 
 Voici une description de l'arborescence du projet, en expliquant le rôle de chaque répertoire et fichier important :
