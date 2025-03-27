@@ -24,14 +24,14 @@ Ce projet propose un assistant pédagogique pour les étudiants en droit des bre
 
 #### Étape 2 : Préparation de l'environnement 
 Sous linux : 
-     ```sh
-        ./setup.sh
-     ```
+  ```sh
+    ./setup.sh
+  ```
 
 Sous Windows : 
-     ```sh
+  ```sh
     .\setup.bat
-     ```
+  ```
 ### 3. Ouverture dans le navigateur
 Utilisez l'URL suivant dans votre navigateur:  
      [http://localhost:5173]
