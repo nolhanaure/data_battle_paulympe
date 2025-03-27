@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+langchain
+langchain-community
+ollama
+scikit-learn
+codecarbon
+tqdm
+torch
+transformers
+sentence-transformers
+faiss-cpu

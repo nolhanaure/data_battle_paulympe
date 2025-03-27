@@ -1,0 +1,308 @@
+
+Article 1
+Business distribution and composition
+
+(1) The Presidium referred to in Rule 12b, paragraph 4, EPC, shall before the beginning of each working year draw up a business distribution scheme for the distribution among the Boards of Appeal of all appeals that may be filed during the year, designating the members who may serve on each Board and their respective alternates. The scheme may be amended during the working year.
+
+(2) The Chair (Chairman or Chairwoman) of each Board shall, before the beginning of each working year, draw up a list of the cases in which the Board is likely to hold oral proceedings, issue a communication under Rule 100, paragraph 2, EPC, or issue a decision in written proceedings in that year. The President of the Boards of Appeal shall, before the beginning of each working year, publish the list of each Board.
+
+(3) The Chair of each Board of Appeal shall determine the composition of the Board for each particular case in accordance with the business distribution scheme. The Chair shall designate himself or herself or a technically or legally qualified member as Chair in the particular appeal.
+
+Article 2
+Replacement of members
+
+(1) A member or the Chair in a particular appeal shall be replaced if prevented from participating, particularly as a result of sickness, excessive workload, or commitments which cannot be avoided.
+
+(2) A member or the Chair in a particular appeal wishing to be replaced shall inform the Chair of the Board of their unavailability without delay.
+
+Article 3
+Exclusion and objection
+
+(1) If a Board has knowledge of a possible reason for exclusion or objection under Article 24 EPC which does not originate from the member concerned or from a party, then the procedure of Article 24, paragraph 4, EPC shall be applied.
+
+(2) The member concerned shall be invited to present comments as to whether there is a reason for exclusion or objection.
+
+(3) Before a decision is taken on the exclusion or objection, there shall be no further proceedings in the case.
+
+Article 4
+Procedural compliance
+
+(1) The Chair of the Board shall for each appeal designate a member of the Board, who may also be the Chair of the Board, to consider the admissibility of the appeal.
+
+(2) The Chair in the particular appeal or a member designated by the Chair of the Board shall ensure that the parties comply with these Rules of Procedure and with directions of the Board and shall propose action to be taken as appropriate.
+
+Article 5
+Rapporteurs
+
+(1) For each appeal, the Chair of the Board shall designate a technically or legally qualified member of the Board, who may also be the Chair of the Board, as rapporteur. If appropriate in the light of the subject-matter of the case, the Chair of the Board may designate an additional rapporteur. The composition of the Board may be completed at a later stage, in accordance with Article 1, paragraph 3. The steps referred to in paragraphs 4 and 5 may not be taken until the composition of the Board has been completed in accordance with Article 1, paragraph 3.
+
+(2) If an additional rapporteur is appointed, the steps referred to in paragraphs 3 to 5 shall be taken by the rapporteur and additional rapporteur jointly.
+
+(3) The rapporteur shall carry out a preliminary study of the appeal and shall, subject to the direction of the Chair of the Board, assess whether the appeal should be given priority over, or should be treated together with, other appeals assigned to the rapporteur.
+
+(4) The rapporteur shall draft communications on behalf of the Board, subject to the direction of the Chair in the particular appeal, and shall make the preparations for meetings of the Board and for oral proceedings.
+
+(5) The rapporteur shall draft decisions.
+
+(6) A rapporteur or additional rapporteur who considers that their knowledge of the language of the proceedings is insufficient for drafting communications or decisions may draft these in one of the other official languages. The drafts shall be translated by the European Patent Office into the language of the proceedings and the translations shall be checked by the rapporteur or by another member of the Board in the particular appeal.
+
+Article 6
+Registries
+
+(1) Registries shall be established for the Boards of Appeal. Registrars shall be responsible for the discharge of the functions of the Registries. One of the Registrars shall be designated as head of the Registry.
+
+(2) The Presidium referred to in Rule 12b, paragraph 1, EPC may entrust to the Registrars the execution of functions which involve no technical or legal difficulties, in particular in relation to arranging for inspection of files, issuing summonses to oral proceedings, notifications and granting requests for further processing of applications.
+
+(3) The Registrar shall report to the Chair of the Board on the admissibility of each newly filed appeal.
+
+(4) The Chair in the particular appeal shall designate a member of the Board or, with the agreement of the Chair of the Board, the Registrar, to draw up the minutes of the oral proceedings and of the taking of evidence.
+
+Article 7
+Interpreters
+
+If required, the Chair in the particular appeal shall make arrangements for interpretation during oral proceedings, the taking of evidence or the deliberations of the Board.
+
+Article 8
+Change in the composition of a Board
+
+(1) If the composition of a Board is changed after oral proceedings, the parties shall be informed that, at the request of any party, fresh oral proceedings shall be held before the Board in its new composition. Fresh oral proceedings shall also be held if so requested by the new member and if the other members of the Board in the particular appeal have given their agreement.
+
+(2) Each new member shall be bound to the same extent as the other members by an interlocutory decision which has already been taken.
+
+(3) A member who is unable to act after the Board has already reached a decision on the appeal shall not be replaced. If the Chair in a particular appeal is unable to act, the member of the Board having the longer or longest service on the Boards of Appeal or, in the case where members have the same length of service, the elder or eldest member, shall sign the decision on behalf of the Chair.
+
+Article 9
+Enlargement of a Board
+
+If a Board consisting of two technically qualified members and one legally qualified member considers that the nature of the appeal requires that the Board should consist of three technically qualified members and two legally qualified members, the decision to enlarge the Board shall be taken at the earliest possible stage in the examination of that appeal.
+
+Article 10
+Consolidation and acceleration of appeal proceedings
+
+(1) If several appeals are filed from a decision, these appeals shall be dealt with in the same proceedings.
+
+(2) If appeals are filed from separate decisions but are clearly connected to each other and if they are to be examined by a Board in the same composition, that Board shall endeavour to deal with them one immediately after the other. The Board may, after having heard the parties, also deal with such appeals in consolidated proceedings.
+
+(3) On request by a party, the Board may accelerate the appeal proceedings. The request shall contain reasons justifying the acceleration and shall, where appropriate, be supported by documentary evidence. The Board shall inform the parties whether the request has been granted.
+
+(4) If a court or other competent authority in a Contracting State requests acceleration of the appeal proceedings, the Board shall inform the court or authority and the parties whether the request has been granted and when oral proceedings, if foreseen, are likely to take place.
+
+(5) The Board may accelerate the appeal proceedings of its own motion.
+
+(6) If the Board accelerates the appeal proceedings, it shall give the appeal priority over other appeals. The Board may adopt a strict framework for the proceedings.
+
+Article 11
+Remittal
+
+The Board shall not remit a case to the department whose decision was appealed for further prosecution, unless special reasons present themselves for doing so. As a rule, fundamental deficiencies which are apparent in the proceedings before that department constitute such special reasons.
+
+Article 12
+Basis of appeal proceedings
+
+(1) Appeal proceedings shall be based on
+
+(a) the decision under appeal and minutes of any oral proceedings before the department having issued that decision;
+
+(b) the notice of appeal and statement of grounds of appeal filed pursuant to Article 108 EPC;
+
+(c) in cases where there is more than one party, any written reply of the other party or parties to be filed within four months of notification of the grounds of appeal;
+
+(d) any communication sent by the Board and any answer thereto filed pursuant to directions of the Board;
+
+(e) minutes of any video or telephone conference with the party or parties sent by the Board.
+
+(2) In view of the primary object of the appeal proceedings to review the decision under appeal in a judicial manner, a partyꞌs appeal case shall be directed to the requests, facts, objections, arguments and evidence on which the decision under appeal was based.
+
+(3) The statement of grounds of appeal and the reply shall contain a party's complete appeal case. Accordingly, they shall set out clearly and concisely the reasons why it is requested that the decision under appeal be reversed, amended or upheld, and should specify expressly all the requests, facts, objections, arguments and evidence relied on. All documents referred to shall be
+
+(a) attached as annexes insofar as they have not already been filed in the course of the grant, opposition or appeal proceedings or produced by the Office in said proceedings;
+
+(b) filed in any event to the extent that the Board so directs in a particular case.
+
+(4) Any part of a party's appeal case which does not meet the requirements in paragraph 2 is to be regarded as an amendment, unless the party demonstrates that this part was admissibly raised and maintained in the proceedings leading to the decision under appeal. Any such amendment may be admitted only at the discretion of the Board.
+
+The party shall clearly identify each amendment and provide reasons for submitting it in the appeal proceedings. In the case of an amendment to a patent application or patent, the party shall also indicate the basis for the amendment in the application as filed and provide reasons why the amendment overcomes the objections raised.
+
+The Board shall exercise its discretion in view of, inter alia, the complexity of the amendment, the suitability of the amendment to address the issues which led to the decision under appeal, and the need for procedural economy.
+
+(5) The Board has discretion not to admit any part of a submission by a party which does not meet the requirements in paragraph 3.
+
+(6) The Board shall not admit requests, facts, objections or evidence which were not admitted in the proceedings leading to the decision under appeal, unless the decision not to admit them suffered from an error in the use of discretion or unless the circumstances of the appeal case justify their admittance.
+
+The Board shall not admit requests, facts, objections or evidence which should have been submitted, or which were no longer maintained, in the proceedings leading to the decision under appeal, unless the circumstances of the appeal case justify their admittance.
+
+(7) Periods specified by the Board may exceptionally be extended at the Board's discretion upon a written and reasoned request, presented before the expiry of such period. The same applies mutatis mutandis to the period referred to in paragraph 1(c); however, this period may only be extended up to a maximum of six months.
+
+(8) Subject to Articles 113 and 116 EPC, the Board may decide the case at any time after filing of the statement of grounds of appeal or, in cases where there is more than one party, after the expiry of the period referred to in paragraph 1(c).
+
+Article 13
+Amendment to a party's appeal case
+
+(1) Any amendment to a party's appeal case after it has filed its grounds of appeal or reply is subject to the party's justification for its amendment and may be admitted only at the discretion of the Board.
+
+Article 12, paragraphs 4 to 6, shall apply mutatis mutandis.
+
+The party shall provide reasons for submitting the amendment at this stage of the appeal proceedings.
+
+The Board shall exercise its discretion in view of, inter alia, the current state of the proceedings, the suitability of the amendment to resolve the issues which were admissibly raised by another party in the appeal proceedings or which were raised by the Board, whether the amendment is detrimental to procedural economy, and, in the case of an amendment to a patent application or patent, whether the party has demonstrated that any such amendment, prima facie, overcomes the issues raised by another party in the appeal proceedings or by the Board and does not give rise to new objections.
+
+(2)
+1
+Any amendment to a party's appeal case made after the expiry of a period specified by the Board in a communication under Rule 100, paragraph 2, EPC or, where such a communication is not issued, after notification of a communication under Article 15, paragraph 1, shall, in principle, not be taken into account unless there are exceptional circumstances, which have been justified with cogent reasons by the party concerned.
+
+(3) Other parties shall be entitled to submit their observations on any amendment not held inadmissible by the Board ex officio.
+
+Article 14
+Interventions
+
+Where, during a pending appeal, notice of intervention is filed, Articles 12 and 13 shall apply in so far as justified by the circumstances of the case.
+
+Article 15
+Oral proceedings and issuing decisions
+
+(1)
+2
+Without prejudice to Rule 115, paragraph 1, EPC, the Board shall, if oral proceedings are to take place, endeavour to give at least four months' notice of the summons. A single date is fixed for the oral proceedings.
+
+In order to help concentration on essentials during the oral proceedings, the Board shall issue a communication drawing attention to matters that seem to be of particular significance for the decision to be taken. The Board may also provide a preliminary opinion. The Board shall endeavour to issue the communication at least four months in advance of the date of the oral proceedings. In cases where there is more than one party, the Board shall issue the communication no earlier than one month after receipt of the written reply or replies referred to in Article 12, paragraph 1(c).
+
+(2) A request of a party for a change of the date fixed for oral proceedings may be allowed if the party has put forward serious reasons which justify the fixing of a new date. If the party is represented, the serious reasons must relate to the representative.
+
+(a) The request shall be filed in writing, reasoned and, where appropriate, supported by documentary evidence. The request shall be filed as soon as possible after the summons to oral proceedings has been notified and the serious reasons in question have arisen. The request should include a list of dates on which the requesting party is not available for oral proceedings.
+
+(b) Reasons which may justify a change of the date for oral proceedings include:
+
+(i) notification of a summons to oral proceedings in other proceedings before the European Patent Office or a national court received before notification of the summons to oral proceedings before the Board;
+
+(ii) serious illness;
+
+(iii) a death within the family;
+
+(iv) marriage or formation of a similar recognised partnership;
+
+(v) military service or other obligatory performance of civic duties;
+
+(vi) holidays or business trips which have been firmly booked before notification of the summons to oral proceedings.
+
+(c) Reasons which, as a rule, do not justify a change of the date for oral proceedings include:
+
+(i) filing of new requests, facts, objections, arguments or evidence;
+
+(ii) excessive work pressure;
+
+(iii) unavailability of a duly represented party;
+
+(iv) unavailability of an accompanying person;
+
+(v) appointment of a new professional representative.
+
+(3) The Board shall not be obliged to delay any step in the proceedings, including its decision, by reason only of the absence at the oral proceedings of a party duly summoned who may then be treated as relying only on its written case.
+
+(4) The Chair presides over the oral proceedings and ensures their fair, orderly and efficient conduct.
+
+(5) When a case is ready for decision during oral proceedings, the Chair shall state the final requests of the parties and declare the debate closed. No submissions may be made by the parties after the closure of the debate unless the Board decides to re-open the debate.
+
+(6) The Board shall ensure that each case is ready for decision at the conclusion of the oral proceedings, unless there are special reasons to the contrary. Before the oral proceedings are closed, the decision may be announced orally by the Chair.
+
+(7) Where the decision on the appeal has been announced orally in accordance with paragraph 6, the reasons for the decision, or parts thereof, may, with the explicit consent of the parties, be put in writing in abridged form. However, where it has been indicated to the Board that a third party or a court has, in the particular case, a legitimate interest in the reasons for the decision not being in abridged form, they shall not be abridged. Where appropriate, the reasons for the decision in abridged form may already be included in the minutes of the oral proceedings.
+
+(8) If the Board agrees with the finding of the department which issued the decision under appeal, on one or more issues, and with the reasons given for it in the decision under appeal, the Board may put the reasons for its decision in abridged form in respect of that issue.
+
+(9) The Board shall issue the decision on the appeal in a timely manner.
+
+(a) Where the Chair announces the decision on the appeal orally in accordance with paragraph 6, the Board shall put the decision in writing and despatch it within three months of the date of the oral proceedings. If the Board is unable to do so, it shall inform the parties when the decision is to be despatched. The President of the Boards of Appeal shall also be informed thereof.
+
+(b)
+3
+When a case is ready for decision at the conclusion of the oral proceedings but the Chair does not announce the decision on the appeal orally in accordance with paragraph 6, the Chair shall indicate the date on which the decision on the appeal is to be despatched, which shall not be later than three months after the closure of the oral proceedings. If the Board is unable to despatch the decision on the appeal by that date, it shall inform the parties and the President of the Boards of Appeal of a new date or, in exceptional circumstances, shall issue a communication specifying the further procedural steps that will be taken.
+
+Article 15a
+4
+
+Oral proceedings by videoconference
+
+(1)The Board may decide to hold oral proceedings pursuant to Article 116 EPC by videoconference if the Board considers it appropriate to do so, either upon request by a party or of its own motion.
+
+(2)Where oral proceedings are scheduled to be held on the premises of the European Patent Office, a party, representative or accompanying person may, upon request, be allowed to attend by videoconference.
+
+(3)The Chair in the particular appeal and, with the agreement of that Chair, any other member of the Board in the particular appeal may participate in the oral proceedings by videoconference.
+
+Article 16
+Costs
+
+(1) Subject to Article 104, paragraph 1, EPC, the Board may on request order a party to pay some or all of another party's costs. Without limiting the Board's discretion, such costs include those incurred by any
+
+(a) amendment to a party's appeal case pursuant to Article 13;
+
+(b) extension of a period;
+
+(c) acts or omissions prejudicing the timely and efficient conduct of oral proceedings;
+
+(d) failure to comply with a direction of the Board;
+
+(e) abuse of procedure.
+
+(2) The costs ordered to be paid may be all or part of those incurred by the receiving party and may, inter alia, be expressed as a percentage or as a specific sum. In the latter event, the Board's decision shall be a final decision for the purposes of Article 104, paragraph 3, EPC. The costs ordered may include costs charged to a party by its professional representative, costs incurred by a party itself whether or not acting through a professional representative, and the costs of witnesses or experts paid by a party but shall be limited to costs necessarily and reasonably incurred.
+
+Article 17
+Communications to the parties
+
+(1) In the written phase of proceedings, replies to requests and directions on matters of procedure shall be given by means of communications.
+
+(2) If a Board deems it expedient to communicate with the parties regarding a possible appreciation of substantive or legal matters, such communication shall be made in such a way as not to imply that the Board is in any way bound by it.
+
+Article 18
+Right of the President of the European Patent Office to comment
+
+The Board may, of its own motion or at the written, reasoned request of the President of the European Patent Office, invite the President to comment in writing or orally on questions of general interest which arise in the course of proceedings pending before it. The parties shall be entitled to submit their observations on the President's comments.
+
+Article 19
+Deliberation and voting
+
+(1) If the members of a Board are not all of the same opinion, the Board shall meet to deliberate regarding the decision to be taken. Only members of the Board shall participate in the deliberations; the Chair in the particular appeal may, however, authorise other officers to attend. The deliberations shall be secret.
+
+(2) During the deliberations of the Board, the opinion of the rapporteur shall be heard first, followed by that of the additional rapporteur if one has been appointed and, if the rapporteur is not the Chair, by that of the Chair last.
+
+(3) If voting is necessary, votes shall be taken in the same sequence, except that the Chair, even when rapporteur, shall vote last. Abstentions shall not be permitted.
+
+Article 20
+Deviations from an earlier decision of any Board or from the Guidelines for Examination
+
+(1) Should a Board consider it necessary to deviate from an interpretation or explanation of the Convention given in an earlier decision of any Board, the grounds for this deviation shall be given, unless such grounds are in accordance with an earlier decision or opinion of the Enlarged Board of Appeal according to Article 112, paragraph 1, EPC. The President of the European Patent Office shall be informed of the Board's decision.
+
+(2) If, in its decision, a Board gives a different interpretation of the Convention from that provided for in the Guidelines for Examination, it shall state its grounds for doing so if it considers that the decision will be more readily understood in the light of such grounds.
+
+Article 21
+Deviation from an earlier decision or opinion of the Enlarged Board of Appeal
+
+Should a Board consider it necessary to deviate from an interpretation or explanation of the Convention contained in an earlier decision or opinion of the Enlarged Board of Appeal according to Article 112, paragraph 1, EPC, the question shall be referred to the Enlarged Board of Appeal.
+
+Article 22
+Referral of a question to the Enlarged Board of Appeal
+
+(1) If a question is to be referred to the Enlarged Board of Appeal in accordance with Article 112, paragraph 1, EPC, a decision to this effect shall be taken by the Board.
+
+(2) The decision shall contain the items specified in Rule 102, sub-paragraphs (a), (b), (c), (d) and (f), EPC and the question which the Board refers to the Enlarged Board of Appeal. The context in which the question arose shall also be stated.
+
+(3) The decision shall be communicated to the parties.
+
+Article 23
+Binding nature of the Rules of Procedure
+
+These Rules of Procedure shall be binding upon the Boards of Appeal, provided that they do not lead to a situation which would be incompatible with the spirit and purpose of the Convention.
+
+Article 24
+Entry into force
+
+(1) The revised version of the Rules of Procedure of the Boards of Appeal (the revised version) shall enter into force on 1 January 2020.
+
+(2) Subject to Article 25, the version of the Rules of Procedure of the Boards of Appeal valid until that time shall cease to be in force upon entry into force of the revised version.
+
+Article 25
+Transitional provisions
+
+(1) The revised version shall apply to any appeal pending on, or filed after, the date of the entry into force, subject to the following paragraphs.
+
+(2) Article 12, paragraphs 4 to 6, of the revised version shall not apply to any statement of grounds of appeal filed before the date of the entry into force and any reply to it filed in due time. Instead, Article 12, paragraph 4, of the Rules of Procedure of the Boards of Appeal in the version valid until the date of the entry into force shall continue to apply.
+
+(3) Where the summons to oral proceedings or a communication of the Board under Rule 100, paragraph 2, EPC has been notified before the date of the entry into force, Article 13, paragraph 2, of the revised version shall not apply. Instead, Article 13 of the Rules of Procedure of the Boards of Appeal in the version valid until the date of the entry into force shall continue to apply. 

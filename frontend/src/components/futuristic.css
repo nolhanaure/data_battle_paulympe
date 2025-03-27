@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  background: linear-gradient(135deg, #f3c2a3, #f2e9de);
+  color: #664740;
+  font-family: 'Roboto', sans-serif;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(12px);
+  margin-top: 40px;
+  animation: appear 0.7s ease-out;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+input, textarea {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #664740 !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+  border-radius: 8px !important;
+  text-align: center !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #664740 !important;
+}
+
+button {
+  background: #fe853b !important;
+  color: #f2e9de !important;
+  border-radius: 8px !important;
+  border-color: #664740 !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.alert {
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #664740;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.loading {
+  text-align: center;
+  color: #664740;
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+.ai-feedback {
+  padding: 15px;
+  background-color: rgba(0,0,0,0.2);
+  border-left: 4px solid #fe853b;
+  border-radius: 8px;
+  line-height: 1.5;
+  color: #664740;
+}
+
+.ai-feedback b { color: #de5129; }
+.ai-feedback i { color: #ff6f08; }
+.ai-feedback .important-note { color: #ff7b7b; font-weight: 500; }
+
+/* Ajoutez ces styles à votre fichier CSS */
+
+#titre {
+  color: #664740;
+}
+
+/* Style pour la sidebar gauche */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: 20px;
+  overflow-y: auto;
+  width: 250px;
+  background-color: transparent; /* Fond transparent */
+  padding: 15px;
+  border-right: 2px solid #ddd; /* Bordure droite */
+}
+
+/* Ajouter un fond légèrement opaque pour le titre */
+.sidebar h5 {
+  padding: 10px;
+  margin: 0;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 5px; /* Arrondi des coins du titre */
+}
+
+/* Style pour chaque ancienne question */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd; /* Bordure légère autour de chaque ancienne question */
+  border-radius: 8px; /* Arrondi des coins */
+  cursor: pointer; /* Curseur pointer pour les éléments cliquables */
+  transition: background-color 0.3s ease; /* Animation au survol */
+}
+
+/* Ajout d'un effet de survol pour les anciennes questions */
+.sidebar li:hover {
+  background-color: #e0e0e041; /* Changer la couleur de fond au survol */
+}
+
+/* Style pour le contenu principal (question et réponse) */
+.main-content {
+  margin-left: 250px; /* Laisser de l'espace pour la sidebar */
+  padding-top: 20px;
+}
+
+/* Style pour les boutons secondaires */
+.scd {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rep {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.barre {
+  background-color: transparent;
+}
+
+.beige {
+  display: block !important;
+  background-color: #f2e9de;
+  text-align: center;
+  margin-bottom: 20px;
+}
