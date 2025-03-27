@@ -59,11 +59,9 @@ Voici une description de l'arborescence du projet, en expliquant le rôle de cha
 ## ⚙️ Fonctionnalités principales
 
 - 🔎 **Recherche de contexte juridique** via FAISS et LangChain
-- 🧠 **Génération de questions d'examen** (MCQ ou ouvertes) à partir du contexte juridique
+- 🧠 **Génération de questions d'examen** (MCQ ou ouvertes) à partir du contexte juridique, à choix multiples ou ouvert, sur un thème choisi ou non.
 - ✅ **Analyse automatique des réponses** avec feedback, évaluation, justification et base légale
-- 🔄 **Re-ranking contextuel** pour combiner la similarité question + réponse
 - 🌱 **Déploiement 100% local** via Ollama + modèles Mistral / Gemma, sans dépendance cloud
-
 
 ---
 
@@ -75,7 +73,7 @@ Voici une description de l'arborescence du projet, en expliquant le rôle de cha
 - **Ollama** – Exécution locale de LLM (Mistral 7B)
 - **FastAPI** – API backend
 - **CodeCarbon** – Estimation de l'empreinte carbone du traitement local
-- **React** : Frontend interactif pour les étudiants, avec appels dynamiques à l’API.
+- **React** : Frontend interactif avec appels dynamiques à l’API.
 
 ---
 
