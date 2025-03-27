@@ -107,8 +107,7 @@ Le système a été pensé pour **minimiser son impact écologique** :
 - Aucun appel cloud/API externe
 - Modèles LLM exécutés localement
 - Embedding fait une seule fois en batch, index persisté
-- Évaluation de la consommation via `codecarbon`
-
+- À chaque appel d'un endpoint du backend, nous utilisons la bibliothèque CodeCarbon pour estimer en temps réel les émissions de CO₂ liées à l'exécution. Le tracker s’active au début de chaque traitement (ex. : génération de question ou analyse de réponse) et s’arrête automatiquement après. Cela permet de mesurer de manière précise la consommation énergétique de chaque requête. En plus de l'affichage dans la console, toutes les interactions sont enregistrées dans un fichier JSONL (interactions_log.jsonl) situé dans le dossier backend/logs
 ---
 
 ## 🧠 Design de la décision
