@@ -14,12 +14,12 @@ from codecarbon import EmissionsTracker
 import subprocess
 tracker = EmissionsTracker(project_name="PatentRAG")
 
-app = FastAPI(title="RAG for Patent Education System with Ollama & LangChain")
+app = FastAPI(title="RAG pour le système d'éducation aux brevets avec Ollama & LangChain")
 
 # Configuration CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000","http://localhost:5173","http://localhost:8000"],
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:5173", "http://localhost:8000"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -85,20 +85,20 @@ def generate_question(category: str):
     context = "\n\n".join([doc.page_content[:600] for doc in selected_docs])
 
     formulations = [
-        "Generate one and only one multiple-choice exam question",
-        "Create one and only one challenging open-ended exam question",
-        "Produce an unique legally relevant exam question",
-        "Write an unique scenario-based question in patent law"
+        "Générez une seule question d'examen à choix multiples",
+        "Créez une seule question d'examen ouverte et stimulante",
+        "Produisez une question d'examen unique ayant une pertinence juridique",
+        "Rédigez une question unique basée sur un scénario en droit des brevets"
     ]
     formulation = random.choice(formulations)
 
     prompt = f"""
--- START OF CONTEXT (official documents and exam materials) --
+-- DÉBUT DU CONTEXTE (documents officiels et supports d'examen) --
 {context}
--- END OF CONTEXT --
+-- FIN DU CONTEXTE --
 
-Generate one and only one concise question in European patent law on the topic '{category}'. {formulation}.
-Do not give the answer. Only return the question and ensure you generate only one question.
+En français, générez une seule question concise en droit européen des brevets sur le thème '{category}'. {formulation}.
+Ne fournissez pas la réponse. Retournez uniquement la question et assurez-vous d'en générer une seule.
 """
 
     try:
@@ -123,18 +123,18 @@ def generate_random_question():
     context = "\n\n".join([doc.page_content[:600] for doc in selected_docs])
 
     formulations = [
-        "Generate one and only one multiple-choice exam question",
-        "Create one and only one open-ended scenario-based question",
-        "Generate a realistic legal exam question in European patent law"
+        "Générez une seule question d'examen à choix multiples",
+        "Créez une seule question basée sur un scénario ouvert",
+        "Générez une question d'examen réaliste en droit européen des brevets"
     ]
     formulation = random.choice(formulations)
 
     prompt = f"""
--- CONTEXT: European patent law documents (EPC, PCT, Guidelines, Exams) --
+-- CONTEXTE : Documents en droit européen des brevets (EPC, PCT, Directives, Examens) --
 {context}
--- END CONTEXT --
+-- FIN DU CONTEXTE --
 
-{formulation}. Do not give any answer. Only return one question, no more.
+{formulation}. En français.Ne fournissez aucune réponse. Retournez uniquement une question, et seulement une.
 """
 
     try:
@@ -144,7 +144,7 @@ def generate_random_question():
         return {"error": str(e)}
 
 
-#Re-ranking pour l'analyse de réponses on donne plus d'importance aux documents prochent de la question mais on booste ceux qui sont proche des deux
+# Re-ranking pour l'analyse de réponses : on donne plus d'importance aux documents proches de la question mais on booste ceux qui sont proches des deux
 def rerank_docs(question, answer, vectorstore, embedding_model, top_k_question=20, top_k_final=10):
     # Embedding des requêtes
     q_vec = embedding_model.embed_query(question)
@@ -192,38 +192,36 @@ def analyze_answer(request: AnalyzeRequest):
     exam_context = "\n\n".join([doc.page_content[:1000] for doc in exam_docs])
 
     prompt = f"""
-You are a legal examiner specialized in European Patent Law (EPC). Your role is to assess student answers in the context of European patent law exams. You are provided with official legal texts and exam questions with model answers to help you assess.
+Vous êtes un examinateur juridique spécialisé en droit européen des brevets (EPC). Votre rôle est d'évaluer les réponses des étudiants dans le contexte des examens en droit européen des brevets. Vous disposez de textes juridiques officiels ainsi que de questions d'examen avec leurs réponses modèles pour vous aider dans votre évaluation.
 
--- CONTEXT FROM OFFICIAL LEGAL TEXTS (EPC, PCT, GUIDELINES) --
+-- CONTEXTE ISSU DES TEXTES JURIDIQUES OFFICIELS (EPC, PCT, DIRECTIVES) --
 {law_context}
--- END OF LEGAL CONTEXT --
+-- FIN DU CONTEXTE JURIDIQUE --
 
--- EXAMPLES OF PREVIOUS EXAM QUESTIONS WITH ANSWERS --
+-- EXEMPLES DE QUESTIONS D'EXAMENS PRÉCÉDENTS AVEC LEURS RÉPONSES --
 {exam_context}
--- END OF EXAMPLES --
+-- FIN DES EXEMPLES --
 
--- STUDENT INPUT --
-Question: {request.user_question}
-Answer: {request.user_answer}
--- END OF STUDENT INPUT --
+-- ENTRÉE DE L'ÉTUDIANT --
+Question : {request.user_question}
+Réponse : {request.user_answer}
+-- FIN DE L'ENTRÉE DE L'ÉTUDIANT --
 
--- TASK --
-Evaluate the student's answer in the style of a professional exam corrector.
+-- TÂCHE --
+Évaluez la réponse de l'étudiant dans le style d'un correcteur d'examens professionnel.
 
+Si c'est une question à choix multiples, déterminez d'abord si l'option sélectionnée par l'étudiant est juridiquement correcte, notez que l'étudiant **n'est pas tenu** de fournir une justification — votre rôle est de confirmer ou infirmer l'option sélectionnée **en vous basant sur la précision juridique**, et de fournir le raisonnement correct.
 
+Pour les autres types de questions, votre réponse doit inclure :
 
-If this is a multiple-choice question,determine first whether the student's selected option is legally correct, note that the student **don't have** to provide a justification — your role is to confirm or refute the selected option **based on legal accuracy**, and provide the correct reasoning.
+1. ✅ - **Évaluation Juridique** : La réponse sélectionnée est-elle correcte ? Indiquez clairement si elle est juste ou fausse et pourquoi.
+2. 💬 - **Retour Constructif** : Si la réponse est incorrecte ou incomplète, expliquez ce qui manque à l'étudiant et comment s'améliorer.
+3. 📝 - **Réponse Modèle** : Fournissez une réponse complète et juridiquement solide, telle qu'attendue dans un examen.
+4. 📚 - **Fondement Juridique Cité** : Citez des articles, règles ou Directives spécifiques de l'EPC ou du PCT qui étayent votre évaluation.
 
-For others type of questions, your response must include:
+Si la réponse de l'étudiant est vide ou hors sujet, fournissez uniquement la Réponse Modèle et le Fondement Juridique Cité.
 
-1. ✅ - **Legal Evaluation**: Is the selected answer correct? Clearly state whether it is right or wrong and why.
-2. 💬 - **Constructive Feedback**: If the answer is wrong or incomplete, explain what the student missed and how to improve.
-3. 📝 - **Model Answer**: Provide a complete and legally sound answer as expected in an exam.
-4. 📚 - **Cited Legal Basis**: Quote specific EPC or PCT articles, rules or Guidelines that support your evaluation.
-
-If the student's answer is empty or irrelevant, just do Model answer and Cited Legal Basis.
-
-**Keep your analysis rigorous but helpful. You are both a pedagogue and a jurist**.
+**En français.Gardez votre analyse rigoureuse mais utile. Vous êtes à la fois un pédagogue et un juriste**.
 """
     try:
         response = ollama_llm.predict(prompt)
@@ -252,23 +250,23 @@ def generate_model_answer(request: ModelAnswerRequest):
     exam_context = "\n\n".join([doc.page_content[:1000] for doc in exam_docs])
 
     prompt = f"""
-You are a legal expert in European patent law. Based on the question and the legal documents and previous exams below, provide only a legally sound model answer and the relevant legal basis.
+Vous êtes un expert juridique en droit européen des brevets. À partir de la question, des documents juridiques et des examens précédents ci-dessous, fournissez uniquement une réponse modèle juridiquement solide ainsi que le fondement juridique pertinent.
 
--- CONTEXT FROM OFFICIAL LEGAL TEXTS (EPC, PCT, GUIDELINES) --
+-- CONTEXTE ISSU DES TEXTES JURIDIQUES OFFICIELS (EPC, PCT, DIRECTIVES) --
 {law_context}
--- END OF LEGAL CONTEXT --
+-- FIN DU CONTEXTE JURIDIQUE --
 
--- PREVIOUS EXAM EXAMPLES --
+-- EXEMPLES D'EXAMENS PRÉCÉDENTS --
 {exam_context}
--- END OF EXAMPLES --
+-- FIN DES EXEMPLES --
 
--- STUDENT INPUT (NO ANSWER GIVEN) --
-Question: {request.user_question}
--- END OF INPUT --
+-- ENTRÉE DE L'ÉTUDIANT (AUCUNE RÉPONSE FOURNIE) --
+Question : {request.user_question}
+-- FIN DE L'ENTRÉE --
 
-Provide:
-📝 Model Answer
-📚 Legal Basis
+Fournissez :
+📝 Réponse Modèle
+📚 Fondement Juridique
 """
     try:
         response = ollama_llm.predict(prompt)
@@ -297,3 +295,5 @@ def retrieve(query: str, k: int = 11):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000)
+    tracker.stop()
+    print(tracker.emissions)
