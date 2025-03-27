@@ -49,7 +49,7 @@ Dans un autre terminal, backend :
   ```
 ### 3. Ouverture dans le navigateur
 Utilisez l'URL suivant dans votre navigateur:  
-     [http://localhost:5173]
+     http://localhost:5173
 
 ## 🗂️ Arborescence du projet
 
