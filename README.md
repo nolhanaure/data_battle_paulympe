@@ -38,6 +38,7 @@ Sous Windows :
 Front : 
   ```sh
     cd frontend
+    npm install
     npm run dev
   ```
 
