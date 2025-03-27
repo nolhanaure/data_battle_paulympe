@@ -16,6 +16,6 @@ ollama pull mistral
 echo "✅ Environnement prêt !"
 
   echo "ℹ️ Vous pouvez lancer manuellement avec :"
-  echo "Frontend : cd frontend && npm run dev"
-  echo "Backend  : source .venv/bin/activate && python3.11 -m uvicorn app:app --reload"
+  echo "Frontend : cd frontend && npm install && npm run dev"
+  echo "Puis dans un nouveau termi nal backend  : source .venv/bin/activate && python -m uvicorn app:app --reload"
 
