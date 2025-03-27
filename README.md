@@ -43,6 +43,7 @@ Front :
 
 Dans un autre terminal, backend : 
   ```sh
+    cd backend
     python3.11 -m uvicorn app:app --reload
   ```
 ### 3. Ouverture dans le navigateur
