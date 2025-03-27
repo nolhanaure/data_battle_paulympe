@@ -47,7 +47,7 @@ Dans un autre terminal, backend :
     cd backend
     python3.11 -m uvicorn app:app --reload
   ```
-### 3. Ouverture dans le navigateur
+#### Étape 3 : Ouverture dans le navigateur
 Utilisez l'URL suivant dans votre navigateur:  
      http://localhost:5173
 
