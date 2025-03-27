@@ -1,5 +1,6 @@
 # 📚 Assistant d'entraînement au droit des brevets
 
+Dans le cadre du data challenge de [l'association IA PAU](https://iapau.org/) 
 Ce projet propose un assistant pédagogique pour les étudiants en droit des brevets, capable de générer des questions d'examen réalistes et de fournir une évaluation automatique des réponses, avec des justifications juridiques extraites de textes officiels (EPC, PCT, Guidelines...).
 
 ---
