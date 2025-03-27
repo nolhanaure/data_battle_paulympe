@@ -17,10 +17,10 @@ Ce projet propose un assistant pédagogique pour les étudiants en droit des bre
 ### 2. Lancement
 
 #### Étape 1 : Cloner le dépôt 
-     ```sh
+  ```sh
     git clone https://github.com/nolhanaure/data_battle_paulympe.git
     cd data_battle_paulympe
-     ```
+  ```    
 
 #### Étape 2 : Préparation de l'environnement 
 Sous linux : 
