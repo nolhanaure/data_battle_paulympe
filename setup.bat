@@ -13,3 +13,14 @@ pip install fastapi uvicorn pydantic langchain langchain-community ollama scikit
 echo 🤖 Téléchargement du modèle Mistral avec Ollama...
 ollama pull mistral
 
+echo ✅ Environnement prêt !
+set /p start=Souhaitez-vous lancer frontend et backend ? (y/n) 
+if /i "%start%"=="y" (
+    echo 🚀 Lancement...
+    start cmd /k "cd frontend && npm install && npm run dev"
+    .venv\Scripts\python.exe -m uvicorn app:app --reload
+) else (
+    echo ℹ️ Lancez manuellement avec :
+    echo Frontend : cd frontend && npm run dev
+    echo Backend  : .venv\Scripts\activate && python -m uvicorn app:app --reload
+)
