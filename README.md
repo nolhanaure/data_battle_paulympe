@@ -66,6 +66,7 @@ Voici une description de l'arborescence du projet, en expliquant le rôle de cha
 - `Official_Legal_Publications_TXT/` : Textes légaux officiels bruts ou nettoyés.
   - `EPC/` : Convention EPC, Règlement d'application, Protocoles, etc. nettoyés.
 - `data_base/` : Versions brutes ou anciennes des fichiers.
+- - `logs/` : Logs reqêtes endpoint codecarbon
 - `emissions.csv` : Mesure de la consommation énergétique (outil CodeCarbon).
 
 ---
