@@ -30,6 +30,7 @@ app.add_middleware(
 LOG_PATH = "logs/requests_log.jsonl"
 os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
 
+#Fontion pour enregistrer les interactions dans un fichier de log
 def log_interaction(endpoint: str, output_data: dict, emissions: float,input_data: dict=None):
     log_entry = {
         "timestamp": datetime.now().isoformat(),
