@@ -12,7 +12,7 @@ Ce projet propose un assistant pédagogique pour les étudiants en droit des bre
 
 ### 1. Prérequis 
 - Ollama installé sur votre machine [https://ollama.com/download]
-- Python3.11
+- Python3.11 minimum
 
 ### 2. Lancement
 
