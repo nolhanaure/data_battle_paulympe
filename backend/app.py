@@ -1,3 +1,4 @@
+import os
 import json
 import random
 from fastapi import FastAPI
@@ -11,6 +12,7 @@ from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 from langchain.llms.base import LLM
 from codecarbon import EmissionsTracker
+from datetime import datetime
 import subprocess
 tracker = EmissionsTracker(project_name="PatentRAG")
 
@@ -24,6 +26,21 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+LOG_PATH = "logs/requests_log.jsonl"
+os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
+
+def log_interaction(endpoint: str, output_data: dict, emissions: float,input_data: dict=None):
+    log_entry = {
+        "timestamp": datetime.now().isoformat(),
+        "endpoint": endpoint,
+        "input": input_data,
+        "output": output_data,
+        "emissions_kg": round(emissions, 8)
+    }
+    with open(LOG_PATH, "a", encoding="utf-8") as f:
+        f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
+
 
 #########################################
 # 1. Charger le vector store avec BGE-M3
@@ -103,7 +120,14 @@ Ne fournissez pas la réponse. Retournez uniquement la question et assurez-vous 
 
     try:
         question = ollama_llm.predict(prompt)
-        tracker.start()
+        emissions = tracker.stop()
+        print(f"🌱 [generate-question] Émissions : {emissions:.6f} kg CO₂eq")
+        log_interaction(
+        endpoint="/generate-question",
+        input_data={"category": category},
+        output_data={"question": question.strip()},
+        emissions=emissions
+        )
         return {"question": question.strip()}
     except Exception as e:
         return {"error": str(e)}
@@ -112,6 +136,7 @@ Ne fournissez pas la réponse. Retournez uniquement la question et assurez-vous 
 # === Génération de question aléatoire ===
 @app.get("/generate-random-question")
 def generate_random_question():
+    tracker.start()
     retriever = vectorstore.as_retriever(search_kwargs={"k": 60})
     all_docs = retriever.get_relevant_documents("")
     random.shuffle(all_docs)
@@ -139,6 +164,13 @@ def generate_random_question():
 
     try:
         question = ollama_llm.predict(prompt)
+        emissions = tracker.stop()
+        print(f"🌱 [generate-random-question] Émissions : {emissions:.6f} kg CO₂eq")
+        log_interaction(
+        endpoint="/generate-random-question",
+        output_data={"question": question.strip()},
+        emissions=emissions
+        )
         return {"question": question.strip()}
     except Exception as e:
         return {"error": str(e)}
@@ -176,6 +208,7 @@ class AnalyzeRequest(BaseModel):
 
 @app.post("/analyze-answer")
 def analyze_answer(request: AnalyzeRequest):
+    tracker.start()
     top_docs = rerank_docs(
         question=request.user_question,
         answer=request.user_answer,
@@ -225,6 +258,13 @@ Si la réponse de l'étudiant est vide ou hors sujet, fournissez uniquement la R
 """
     try:
         response = ollama_llm.predict(prompt)
+        emissions = tracker.stop()
+        print(f"🌱 [analyze-answer] Émissions : {emissions:.6f} kg CO₂eq")
+        log_interaction(
+        endpoint="/analyze-answer",
+        output_data={"question": response.strip()},
+        emissions=emissions
+        )
         return {"feedback": response.strip()}
     except Exception as e:
         return {"error": str(e)}
@@ -234,6 +274,7 @@ class ModelAnswerRequest(BaseModel):
     user_question: str
 @app.post("/generate-model-answer")
 def generate_model_answer(request: ModelAnswerRequest):
+    tracker.start()
     top_docs = rerank_docs(
         question=request.user_question,
         answer="",  # Pas de réponse étudiante
@@ -270,6 +311,13 @@ Fournissez :
 """
     try:
         response = ollama_llm.predict(prompt)
+        emissions = tracker.stop()
+        print(f"🌱 [generate-model-answer] Émissions : {emissions:.6f} kg CO₂eq")
+        log_interaction(
+        endpoint="/generate-model-answer",
+        output_data={"question": response.strip()},
+        emissions=emissions
+        )
         return {"feedback": response.strip()}
     except Exception as e:
         return {"error": str(e)}
@@ -295,5 +343,3 @@ def retrieve(query: str, k: int = 11):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000)
-    tracker.stop()
-    print(tracker.emissions)
