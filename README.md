@@ -86,7 +86,7 @@ Voici une description de l'arborescence du projet, en expliquant le rôle de cha
 - 🔎 **Recherche de contexte juridique** via FAISS et LangChain
 - 🧠 **Génération de questions d'examen** (MCQ ou ouvertes) à partir du contexte juridique, à choix multiples ou ouvert, sur un thème choisi ou non.
 - ✅ **Analyse automatique des réponses** avec feedback, évaluation, justification et base légale
-- 🌱 **Déploiement 100% local** via Ollama + modèles Mistral / Gemma, sans dépendance cloud
+- 🌱 **Déploiement 100% local** via Ollama + modèle Mistral, sans dépendance cloud
 
 ---
 
